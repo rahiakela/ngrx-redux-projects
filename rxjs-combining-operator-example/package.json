@@ -1,0 +1,18 @@
+{
+  "name": "rxjs-combining-operator-example",
+  "version": "1.0.0",
+  "description": "This example demo Combination Operators ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reactive",
+    "rxjs"
+  ],
+  "author": "Rahi Akela",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^5.5.9"
+  }
+}
