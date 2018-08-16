@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StoreModule } from '@ngrx/store';
+import { featureReducer } from './reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { MyFeatureStoreEffects } from './effects';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    StoreModule.forFeature('myFeature', featureReducer),
+    EffectsModule.forFeature([MyFeatureStoreEffects]),
   ],
-  declarations: []
+  declarations: [],
+  providers: [MyFeatureStoreEffects],
 })
-export class MyFeatureStoreModule { }
+export class MyFeatureStoreModule {}
